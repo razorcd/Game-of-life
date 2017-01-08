@@ -1,4 +1,5 @@
 require_relative "../app/game_of_life.rb"
+require_relative "fixtures/test_cases"
 
 RSpec.describe GameOfLife do
     it "should initialize with a board" do
@@ -11,40 +12,7 @@ RSpec.describe GameOfLife do
     end
 
     describe "rules" do
-        test_cases = {
-            all_false: {
-                title: "All false.",
-                input: 
-                    [
-                        [false, false, false], 
-                        [false, false, false], 
-                        [false, false, false]
-                    ],
-                output:    
-                    [
-                        [false, false, false], 
-                        [false, false, false], 
-                        [false, false, false]
-                    ]
-            },
-            middle_true: {
-                title: "Middle true",
-                input: 
-                    [
-                        [false, false, false], 
-                        [false, true,  false], 
-                        [false, false, false]
-                    ],
-                output:    
-                    [
-                        [false, false, false], 
-                        [false, false, false], 
-                        [false, false, false]
-                    ]
-            },
-        }
-
-        test_cases.values.each do |test_case|
+        TestCases::CASES.values.each do |test_case|
             it "should run test case: #{test_case[:title]}" do
                 game = GameOfLife.new(test_case[:input])
                 game.tick
