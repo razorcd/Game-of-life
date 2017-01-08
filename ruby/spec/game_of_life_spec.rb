@@ -13,7 +13,8 @@ RSpec.describe GameOfLife do
 
     describe "rules" do
         TestCases::CASES.values.each do |test_case|
-            it "should run test case: #{test_case[:title]}" do
+            # next unless test_case[:title] == "2 neighbours_true" # to run only one test case
+            it "should run test case: #{test_case[:title]}, on matrix: #{test_case[:input].to_s}" do
                 game = GameOfLife.new(test_case[:input])
                 game.tick
                 expect(game.board).to eq(test_case[:output])
