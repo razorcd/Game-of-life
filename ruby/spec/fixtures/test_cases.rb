@@ -63,5 +63,20 @@ module TestCases
                         [false, false, false]
                     ]
             },
+            two_neighbours_true: {
+                title: "3 neighbours_true",
+                input: 
+                    [
+                        [false, false, true], 
+                        [true,  true,  false], 
+                        [false, false, true]
+                    ],
+                output:    
+                    [
+                        [false, false, false], 
+                        [false, true,  false], 
+                        [false, false, false]
+                    ]
+            },
         }
 end

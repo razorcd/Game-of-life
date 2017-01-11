@@ -31,7 +31,10 @@ class GameOfLife
     end
 
     def generate_next_cell(x,y)
-        return false if (alive_neighbours_count(x,y) < 2) 
+        alive_neighbours_count = alive_neighbours_count(x,y)
+        if (alive_neighbours_count < 2) then return false end
+        if (alive_neighbours_count == 2) then return @board[x][y] end
+        if (alive_neighbours_count == 3) then return @board[x][y] end
         return @board[x][y]
     end
 
