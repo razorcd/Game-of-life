@@ -35,6 +35,7 @@ class GameOfLife
         if (alive_neighbours_count < 2) then return false end
         if (alive_neighbours_count == 2) then return @board[x][y] end
         if (alive_neighbours_count == 3) then return @board[x][y] end
+        if (alive_neighbours_count > 3) then return false end
         return @board[x][y]
     end
 
