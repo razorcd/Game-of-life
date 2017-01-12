@@ -52,14 +52,30 @@ module TestCases
                 title: "2 neighbours_true",
                 input: 
                     [
-                        [false, false, false], 
-                        [true,  true,  false], 
+                        [true,  false, false], 
+                        [false, true,  false], 
                         [false, false, true]
                     ],
                 output:    
                     [
                         [false, false, false], 
                         [false, true,  false], 
+                        [false, false, false]
+                    ]
+            },
+
+            three_neighbours_false: {
+                title: "3 neighbours_false",
+                input: 
+                    [
+                        [false, false, true], 
+                        [true,  false,  false], 
+                        [false, false, true]
+                    ],
+                output:    
+                    [
+                        [false, false, false], 
+                        [false, false,  false], 
                         [false, false, false]
                     ]
             },
@@ -75,6 +91,23 @@ module TestCases
                     [
                         [false, false, false], 
                         [false, true,  false], 
+                        [false, false, false]
+                    ]
+            },
+
+
+            four_neighbours_false: {
+                title: "4 neighbours_false",
+                input: 
+                    [
+                        [true,  false, true], 
+                        [false, false, false], 
+                        [true,  false, true]
+                    ],
+                output:    
+                    [
+                        [false, false, false], 
+                        [false, false, false], 
                         [false, false, false]
                     ]
             },
