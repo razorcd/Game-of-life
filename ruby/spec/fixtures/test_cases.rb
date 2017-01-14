@@ -69,13 +69,13 @@ module TestCases
                 input: 
                     [
                         [false, false, true], 
-                        [true,  false,  false], 
+                        [true,  false, false], 
                         [false, false, true]
                     ],
                 output:    
                     [
                         [false, false, false], 
-                        [false, false,  false], 
+                        [false, true,  false], 
                         [false, false, false]
                     ]
             },
@@ -89,9 +89,9 @@ module TestCases
                     ],
                 output:    
                     [
-                        [false, false, false], 
-                        [false, true,  false], 
-                        [false, false, false]
+                        [false, true, false], 
+                        [false, true, true], 
+                        [false, true, false]
                     ]
             },
 
@@ -121,9 +121,9 @@ module TestCases
                     ],
                 output:    
                     [
-                        [false, false, false], 
-                        [false, false, false], 
-                        [false, false, false]
+                        [false, true,  false], 
+                        [true,  false, true], 
+                        [false, true,  false]
                     ]
             },
 
@@ -131,14 +131,14 @@ module TestCases
                 title: "5 neighbours_false",
                 input: 
                     [
-                        [true,  true, true], 
+                        [true,  true,  true], 
                         [false, false, false], 
                         [true,  false, true]
                     ],
                 output:    
                     [
-                        [false, true, false], 
-                        [false, false, false], 
+                        [false, true,  false], 
+                        [true,  false, true], 
                         [false, false, false]
                     ]
             },
@@ -154,7 +154,7 @@ module TestCases
                     [
                         [true,  true,  true], 
                         [false, false, false], 
-                        [false, false, false]
+                        [false, true,  false]
                     ]
             },
 
