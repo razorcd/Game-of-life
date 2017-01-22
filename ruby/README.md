@@ -18,13 +18,13 @@ game = GameOfLife.new([
 
 
 Generate next itteration by calling the `tick` method.
-```        
+``` ruby       
     game.tick
 ```
 
 
 Get current itteration by calling the `board` method.
-```
+``` ruby
 game.board # =>
         [
             [true,  true,  true,  false], 
