@@ -34,5 +34,8 @@ game.board # =>
         ]
 ```
 
-
 Find more test cases in `/spec/fixtures/test_cases.rb`
+
+## Tests
+
+Run tests by simply running the `rspec` command.
