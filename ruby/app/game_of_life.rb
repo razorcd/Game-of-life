@@ -44,12 +44,23 @@ class GameOfLife
     # Returns the value of the next itteration for once cell defined by x,y coordinates.
     def generate_next_cell(x,y)
         alive_neighbours_count = alive_neighbours_count(x,y)
-        if (alive_neighbours_count < 2) then return false end         #rule 1
-        if (alive_neighbours_count == 2) then return @board[x][y] end #rule 2
-        if (alive_neighbours_count == 3) then return true end         #rule 2 and 4
-        if (alive_neighbours_count > 3) then return false end         #rule 3
+        cell = @board[x][y]
+
+        return !cell if (cell && (alive_neighbours_count < 2 || alive_neighbours_count > 3) ||
+                        (!cell && (alive_neighbours_count == 3)))
         return @board[x][y]
     end
+
+    # # More explicit:
+    # # Returns the value of the next itteration for once cell defined by x,y coordinates.
+    # def generate_next_cell(x,y)
+    #     alive_neighbours_count = alive_neighbours_count(x,y)
+    #     if (alive_neighbours_count < 2) then return false end         #rule 1
+    #     if (alive_neighbours_count == 2) then return @board[x][y] end #rule 2
+    #     if (alive_neighbours_count == 3) then return true end         #rule 2 and 4
+    #     if (alive_neighbours_count > 3) then return false end         #rule 3
+    #     return @board[x][y]
+    # end
 
     # Counts the allive neighbours that surround the cell defined by the x,y coordinates.
     def alive_neighbours_count(x,y)
