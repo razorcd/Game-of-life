@@ -15,14 +15,14 @@ public class GameOfLifeTest {
 
     @Test
     public void gameInitializer() throws Exception {
-        boolean[][] matrix = new boolean[][]{
+        Boolean[][] matrix = new Boolean[][]{
             {false, false, true},
             {false, true,  false},
             {true,  false, false}
         };
 
         GameOfLife game = new GameOfLife(matrix);
-        assertThat(game.getMatrix(), is(new boolean[][]{
+        assertThat(game.getMatrix(), is(new Boolean[][]{
                 {false, false, true},
                 {false, true,  false},
                 {true,  false, false}
@@ -31,7 +31,7 @@ public class GameOfLifeTest {
 
     @Test
     public void doesATick() {
-        boolean[][] matrix = new boolean[][]{
+        Boolean[][] matrix = new Boolean[][]{
                 {false, false, false},
                 {false, false, false},
                 {false, false, false}
@@ -40,7 +40,25 @@ public class GameOfLifeTest {
         GameOfLife game = new GameOfLife(matrix);
         game.tick();
 
-        assertThat(game.getMatrix(), is(new boolean[][]{
+        assertThat(game.getMatrix(), is(new Boolean[][]{
+                {false, false, false},
+                {false, false, false},
+                {false, false, false}
+        }));
+    }
+
+    @Test
+    public void cellWithLessThenTwoNeighboaursDies() {
+        Boolean[][] matrix = new Boolean[][]{
+                {false, false, false},
+                {false, true,  false},
+                {false, false, false}
+        };
+
+        GameOfLife game = new GameOfLife(matrix);
+        game.tick();
+
+        assertThat(game.getMatrix(), is(new Boolean[][]{
                 {false, false, false},
                 {false, false, false},
                 {false, false, false}
