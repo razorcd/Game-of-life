@@ -32,6 +32,32 @@ public class MatrixGenerator {
                         {false, false, false},
                         {false, false, false}
                 }
+            ),
+            new MatrixGeneratorDto(
+                "true Cell with one neighbour should die",
+                new Boolean[][]{
+                        {false, false, false},
+                        {false, true,  false},
+                        {true,  false, false}
+                },
+                new Boolean[][]{
+                        {false, false, false},
+                        {false, false, false},
+                        {false, false, false}
+                }
+            ),
+            new MatrixGeneratorDto(
+                "true Cell with two neighbours should stay alive",
+                new Boolean[][]{
+                        {false, false, true},
+                        {false, true,  false},
+                        {true,  false, false}
+                },
+                new Boolean[][]{
+                        {false, false, false},
+                        {false, true,  false},
+                        {false, false, false}
+                }
             )
 
         );
