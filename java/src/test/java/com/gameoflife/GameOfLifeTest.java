@@ -1,20 +1,15 @@
 package com.gameoflife;
 
-import org.junit.Before;
+import com.gameoflife.factory.MatrixGenerator;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.*;
-
 
 import static org.junit.Assert.*;
 
 public class GameOfLifeTest {
 
-    @Before
-    public void setUp() throws Exception {
-    }
-
     @Test
-    public void gameInitializer() throws Exception {
+    public void testGameInitializer() throws Exception {
         Boolean[][] matrix = new Boolean[][]{
             {false, false, true},
             {false, true,  false},
@@ -30,38 +25,14 @@ public class GameOfLifeTest {
     }
 
     @Test
-    public void doesATick() {
-        Boolean[][] matrix = new Boolean[][]{
-                {false, false, false},
-                {false, false, false},
-                {false, false, false}
-        };
-
-        GameOfLife game = new GameOfLife(matrix);
-        game.tick();
-
-        assertThat(game.getMatrix(), is(new Boolean[][]{
-                {false, false, false},
-                {false, false, false},
-                {false, false, false}
-        }));
-    }
-
-    @Test
-    public void cellWithLessThenTwoNeighboaursDies() {
-        Boolean[][] matrix = new Boolean[][]{
-                {false, false, false},
-                {false, true,  false},
-                {false, false, false}
-        };
-
-        GameOfLife game = new GameOfLife(matrix);
-        game.tick();
-
-        assertThat(game.getMatrix(), is(new Boolean[][]{
-                {false, false, false},
-                {false, false, false},
-                {false, false, false}
-        }));
+    public void testGameRules() {
+        MatrixGenerator.getList().forEach(
+                matrixGeneratorDto -> {
+                    System.out.println("Running testGameRules(): " + matrixGeneratorDto.getReason());
+                    GameOfLife game = new GameOfLife(matrixGeneratorDto.getInput());
+                    game.tick();
+                    assertThat(matrixGeneratorDto.getReason(), game.getMatrix(), is(matrixGeneratorDto.getOutput()));
+                }
+        );
     }
 }
