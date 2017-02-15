@@ -62,7 +62,7 @@ public class MatrixGenerator {
             new MatrixGeneratorDto(
                 "true Cell with four neighbours",
                 new Boolean[][]{
-                        {true, false, true},
+                        {true,  false, true},
                         {false, true,  false},
                         {true,  false, true}
                 },
@@ -71,8 +71,20 @@ public class MatrixGenerator {
                         {false, false, false},
                         {false, false, false}
                 }
+            ),
+            new MatrixGeneratorDto(
+                "true Cell with five neighbours",
+                new Boolean[][]{
+                        {true,  false, true},
+                        {false, true,  false},
+                        {true,  true, true}
+                },
+                new Boolean[][]{
+                        {false, false, false},
+                        {false, false, false},
+                        {true,  true,  true}
+                }
             )
-
         );
     }
 }

@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameOfLife.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameOfLife.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gameoflife/GameOfLife.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixGenerator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MatrixGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="70" column="39" lean-forward="true" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+            <state relative-caret-position="310">
+              <caret line="84" column="32" lean-forward="false" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,8 +160,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/gameoflife/factory/Key.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGeneratorDto.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gameoflife/GameOfLifeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gameoflife/GameOfLife.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java" />
       </list>
     </option>
   </component>
@@ -561,15 +561,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 43m 12s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 45m 26s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 45m 30s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 46m 06s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
@@ -589,6 +580,15 @@
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 51m 24s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 52m 59s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 53m 01s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 53m 23s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -851,16 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="70" column="39" lean-forward="true" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gameoflife/GameOfLife.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -869,6 +859,16 @@
             <element signature="imports" expanded="true" />
             <element signature="e#309#310#0" expanded="true" />
             <element signature="e#353#354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="84" column="32" lean-forward="false" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
