@@ -84,6 +84,19 @@ public class MatrixGenerator {
                         {false, false, false},
                         {true,  true,  true}
                 }
+            ),
+            new MatrixGeneratorDto(
+                "true Cell with six neighbours",
+                new Boolean[][]{
+                        {true,  true, true},
+                        {false, true,  false},
+                        {true,  true, true}
+                },
+                new Boolean[][]{
+                        {true,  true,  true},
+                        {false, false, false},
+                        {true,  true,  true}
+                }
             )
         );
     }
