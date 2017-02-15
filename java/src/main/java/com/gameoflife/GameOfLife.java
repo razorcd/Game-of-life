@@ -32,6 +32,8 @@ public class GameOfLife {
 
     private Boolean getNextCellState(int i, int j) {
             if (getNeighboursFor(i,j) < 2 ) { return false; }
+            if (getNeighboursFor(i,j) == 2 ) { return matrix[i][j]; }
+            if (getNeighboursFor(i,j) == 3 ) { return matrix[i][j]; }
             return matrix[i][j];
     }
 
