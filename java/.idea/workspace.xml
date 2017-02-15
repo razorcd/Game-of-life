@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameOfLife.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameOfLife.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gameoflife/GameOfLife.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="35" column="65" lean-forward="false" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+            <state relative-caret-position="298">
+              <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#309#310#0" expanded="true" />
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MatrixGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="70" column="44" lean-forward="false" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+            <state relative-caret-position="198">
+              <caret line="70" column="39" lean-forward="true" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,6 +164,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gameoflife/GameOfLife.java" />
       </list>
     </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="GameOfLifeTest" />
+    </enabled-run-configurations>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -556,12 +561,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 38m 53s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 39m 16s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 43m 12s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
@@ -577,14 +576,20 @@
     <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 48m 27s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameOfLifeTest_testGameRules - 2017.10.31 at 01h 28m 21s.xml">
-      <configuration name="GameOfLifeTest.testGameRules" configurationId="JUnit" />
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 50m 14s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameOfLifeTest_testGameRules - 2017.10.31 at 01h 29m 08s.xml">
-      <configuration name="GameOfLifeTest.testGameRules" configurationId="JUnit" />
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 50m 36s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameOfLifeTest_testGameRules - 2017.10.31 at 01h 32m 16s.xml">
-      <configuration name="GameOfLifeTest.testGameRules" configurationId="JUnit" />
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 50m 38s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 51m 22s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 51m 24s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -846,24 +851,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gameoflife/GameOfLife.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="35" column="65" lean-forward="false" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+        <state relative-caret-position="198">
+          <caret line="70" column="39" lean-forward="true" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gameoflife/GameOfLife.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="70" column="44" lean-forward="false" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+        <state relative-caret-position="298">
+          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
           </folding>
         </state>
       </provider>

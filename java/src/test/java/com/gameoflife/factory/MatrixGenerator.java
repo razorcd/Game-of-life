@@ -60,15 +60,15 @@ public class MatrixGenerator {
                 }
             ),
             new MatrixGeneratorDto(
-                "true Cell with three neighbours",
+                "true Cell with four neighbours",
                 new Boolean[][]{
-                        {false, false, true},
+                        {true, false, true},
                         {false, true,  false},
                         {true,  false, true}
                 },
                 new Boolean[][]{
                         {false, false, false},
-                        {false, true,  false},
+                        {false, false, false},
                         {false, false, false}
                 }
             )
