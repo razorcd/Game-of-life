@@ -60,6 +60,19 @@ public class MatrixGenerator {
                 }
             ),
             new MatrixGeneratorDto(
+                "true Cell with three neighbours",
+                new Boolean[][]{
+                        {true,  false, true},
+                        {false, true,  false},
+                        {true,  false, false}
+                },
+                new Boolean[][]{
+                        {false, false, false},
+                        {false, true,  false},
+                        {false, false, false}
+                }
+            ),
+            new MatrixGeneratorDto(
                 "true Cell with four neighbours",
                 new Boolean[][]{
                         {true,  false, true},
@@ -99,7 +112,7 @@ public class MatrixGenerator {
                 }
             ),
             new MatrixGeneratorDto(
-                "true Cell with six neighbours",
+                "true Cell with all neighbours",
                 new Boolean[][]{
                         {true, true, true},
                         {true, true, true},
@@ -109,6 +122,21 @@ public class MatrixGenerator {
                         {true,  false, true},
                         {false, false, false},
                         {true,  false, true}
+                }
+            ),
+            new MatrixGeneratorDto(
+                "true Cell with random neighbours on big matrix",
+                new Boolean[][]{
+                        {true,  false, true,  false, false, true},
+                        {false, true,  false, true,  false, true},
+                        {true,  false,  true,  false,  true, false},
+                        {true,  true,  true,  true,  false, false}
+                },
+                new Boolean[][]{
+                        {false,  false, true,  false, false, false},
+                        {false, false,  false, true,  false, true},
+                        {true,  false, false, false,  true, false},
+                        {true,  false,  true,  true,  false, false}
                 }
             )
         );
