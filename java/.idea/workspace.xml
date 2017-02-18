@@ -62,8 +62,8 @@
       <file leaf-file-name="MatrixGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="86" column="14" lean-forward="false" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+            <state relative-caret-position="284">
+              <caret line="108" column="38" lean-forward="false" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -561,18 +561,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 50m 36s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 50m 38s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 51m 22s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 51m 24s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 52m 59s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
@@ -591,9 +579,22 @@
     <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 55m 16s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 56m 28s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 56m 31s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 57m 02s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2017.10.31 at 01h 57m 04s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="-750" width="1329" height="750" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -613,7 +614,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34810126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34810126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -864,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/gameoflife/factory/MatrixGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="86" column="14" lean-forward="false" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+        <state relative-caret-position="284">
+          <caret line="108" column="38" lean-forward="false" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
