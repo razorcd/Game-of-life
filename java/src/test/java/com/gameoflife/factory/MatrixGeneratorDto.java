@@ -1,5 +1,7 @@
 package com.gameoflife.factory;
 
+import java.util.Arrays;
+
 public class MatrixGeneratorDto {
 
     private String reason;

@@ -11,14 +11,28 @@ public class GameOfLife {
         this.matrix = matrix;
     }
 
+    /**
+     * Return the matrix in it's current state
+     * @return [Boolea[][]] the matrix in it's current state
+     */
     public Boolean[][] getMatrix() {
         return matrix;
     }
 
+    /**
+     * Generate the matrix with the new states
+     *
+     * @return [Boolean[][]] The matrix with the new states
+     */
     public void tick() {
         matrix = generateNewMatrix();
     }
 
+    /**
+     * Generate the matrix with the new states
+     *
+     * @return [Boolean[][]] The matrix with the new states
+     */
     private Boolean[][] generateNewMatrix() {
         Boolean[][] tempMatrix = new Boolean[matrix.length][matrix[0].length];
 
@@ -30,6 +44,13 @@ public class GameOfLife {
         return tempMatrix;
     }
 
+    /**
+     *  Generate the next state of specified cell
+     *
+     * @param i the column position of the cell
+     * @param j the row position of the cell
+     * @return [Boolean] the next state of the specified cell
+     */
     private Boolean getNextCellState(int i, int j) {
             if (matrix[i][j]==false && getNeighboursFor(i,j) == 3 ) { return true; }
             if (getNeighboursFor(i,j) < 2 ) { return false; }
@@ -52,6 +73,3 @@ public class GameOfLife {
         return Optional.of(matrix[x][y]);
     }
 }
-
-
-
