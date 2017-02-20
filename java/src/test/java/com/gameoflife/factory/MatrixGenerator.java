@@ -67,8 +67,8 @@ public class MatrixGenerator {
                         {true,  false, false}
                 },
                 new Boolean[][]{
-                        {false, false, false},
-                        {false, true,  false},
+                        {false, true, false},
+                        {true, true,  false},
                         {false, false, false}
                 }
             ),
@@ -80,9 +80,9 @@ public class MatrixGenerator {
                         {true,  false, true}
                 },
                 new Boolean[][]{
-                        {false, false, false},
-                        {false, false, false},
-                        {false, false, false}
+                        {false, true, false},
+                        {true,  false, true},
+                        {false, true, false}
                 }
             ),
             new MatrixGeneratorDto(
@@ -93,7 +93,7 @@ public class MatrixGenerator {
                         {true,  true, true}
                 },
                 new Boolean[][]{
-                        {false, false, false},
+                        {false, true, false},
                         {false, false, false},
                         {true,  true,  true}
                 }
@@ -129,14 +129,14 @@ public class MatrixGenerator {
                 new Boolean[][]{
                         {true,  false, true,  false, false, true},
                         {false, true,  false, true,  false, true},
-                        {true,  false,  true,  false,  true, false},
+                        {true,  false, true,  false, true,  false},
                         {true,  true,  true,  true,  false, false}
                 },
                 new Boolean[][]{
-                        {false,  false, true,  false, false, false},
-                        {false, false,  false, true,  false, true},
-                        {true,  false, false, false,  true, false},
-                        {true,  false,  true,  true,  false, false}
+                        {false, true,  true,  false, true, false},
+                        {true,  false, false, true,  false, true},
+                        {true,  false, false, false, true,  false},
+                        {true,  false, true,  true,  false, false}
                 }
             )
         );
