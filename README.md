@@ -20,4 +20,6 @@ The initial pattern constitutes the seed of the system. The first generation is 
 
 [Game of life in Ruby using TDD.](/ruby)
 
+[Game of life in Java using TDD.](/java)
+
 ... more to come
