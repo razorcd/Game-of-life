@@ -23,14 +23,14 @@ class GameOfLife
         @board
     end
 
-    # Generates a new itteration of the game
+    # Generates a new iteration of the game
     def tick
         @board = generate_next_board
     end
 
     private
 
-    # Returns the value of the next itteration for the entire board.
+    # Returns the value of the next iteration for the entire board.
     def generate_next_board
         temp_board = JSON.parse(([[nil]*@length]*@width).to_json)
         @length.times do |i|
@@ -41,7 +41,7 @@ class GameOfLife
         temp_board
     end
 
-    # Returns the value of the next itteration for once cell defined by x,y coordinates.
+    # Returns the value of the next iteration for once cell defined by x,y coordinates.
     def generate_next_cell(x,y)
         alive_neighbours_count = alive_neighbours_count(x,y)
         cell = @board[x][y]
@@ -52,7 +52,7 @@ class GameOfLife
     end
 
     # # More explicit:
-    # # Returns the value of the next itteration for once cell defined by x,y coordinates.
+    # # Returns the value of the next iteration for once cell defined by x,y coordinates.
     # def generate_next_cell(x,y)
     #     alive_neighbours_count = alive_neighbours_count(x,y)
     #     if (alive_neighbours_count < 2) then return false end         #rule 1
