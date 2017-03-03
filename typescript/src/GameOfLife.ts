@@ -5,4 +5,8 @@ export default class GameOfLife {
         this.matrix = matrix;
     }
 
+    getBoard():Boolean[][] {
+        return this.matrix;
+    }
+
 }
