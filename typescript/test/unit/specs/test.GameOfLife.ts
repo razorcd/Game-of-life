@@ -21,10 +21,24 @@ describe('GameOfLife', () => {
     });
 
     describe('with rules', ()=>{
-        it('pass', ()=>{
+        it('cell should live when it is a false cell with no neighbours', ()=>{
             let game:GameOfLife = new GameOfLife([
                     [false,false,false],
                     [false,false,false],
+                    [false,false,false]
+                ]);
+            game.tick();
+            expect(game.getBoard()).toEqual([
+                    [false,false,false],
+                    [false,false,false],
+                    [false,false,false]
+                ])
+        });
+
+        it('cell should die when it is a true cell with no neighbours', ()=>{
+            let game:GameOfLife = new GameOfLife([
+                    [false,false,false],
+                    [false,true,false],
                     [false,false,false]
                 ]);
             game.tick();
