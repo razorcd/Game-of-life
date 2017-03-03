@@ -9,4 +9,7 @@ export default class GameOfLife {
         return this.matrix;
     }
 
+    tick():void {
+        
+    }
 }
