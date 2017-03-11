@@ -48,6 +48,36 @@ describe('GameOfLife', () => {
                     [false,false,false]
                 ])
         });
+
+        it('cell should die when it is a true cell with 1 neighbour', ()=>{
+            let game:GameOfLife = new GameOfLife([
+                    [true,false,false],
+                    [false,true,false],
+                    [false,false,false]
+                ]);
+            game.tick();
+            expect(game.getBoard()).toEqual([
+                    [false,false,false],
+                    [false,false,false],
+                    [false,false,false]
+                ])
+        });
+
+        it('cell should live when it is a true cell with 2 neighbours', ()=>{
+            let game:GameOfLife = new GameOfLife([
+                    [true,false,true],
+                    [false,true,false],
+                    [false,false,false]
+                ]);
+            game.tick();
+            expect(game.getBoard()).toEqual([
+                    [false,false,false],
+                    [false,true,false],
+                    [false,false,false]
+                ])
+        });
+
+
     })
 
 });
