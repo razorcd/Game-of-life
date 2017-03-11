@@ -77,6 +77,19 @@ describe('GameOfLife', () => {
                 ])
         });
 
+        it('cell should live when it is a true cell with 3 neighbours', ()=>{
+            let game:GameOfLife = new GameOfLife([
+                    [true,false,true],
+                    [false,true,false],
+                    [false,false,true]
+                ]);
+            game.tick();
+            expect(game.getBoard()).toEqual([
+                    [false,false,false],
+                    [false,true,false],
+                    [false,false,false]
+                ])
+        });
 
     })
 
