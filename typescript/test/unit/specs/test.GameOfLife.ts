@@ -91,6 +91,20 @@ describe('GameOfLife', () => {
                 ])
         });
 
+        it('cell should die when it is a false cell with 4 neighbours', ()=>{
+            let game:GameOfLife = new GameOfLife([
+                    [true,false,true],
+                    [false,true,false],
+                    [true,false,true]
+                ]);
+            game.tick();
+            expect(game.getBoard()).toEqual([
+                    [false,false,false],
+                    [false,true,false],
+                    [false,false,false]
+                ])
+        });
+
     })
 
 });
