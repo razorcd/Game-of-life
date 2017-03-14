@@ -24,7 +24,10 @@ export default class GameOfLife {
     }
 
     private getNexyCellState(x:number, y:number):Boolean {
-        if (this.getNeighbourCount(x,y) >= 2) { return this.matrix[x][y]; }
+        if (this.getNeighbourCount(x,y) < 2) { return false; }
+        if (this.getNeighbourCount(x,y) == 2) { return this.matrix[x][y]; }
+        if (this.getNeighbourCount(x,y) == 3) { return true; }
+        if (this.getNeighbourCount(x,y) > 3) { return false; }
         return false;
     }
 

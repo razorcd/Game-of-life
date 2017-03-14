@@ -71,7 +71,7 @@ describe('GameOfLife', () => {
                 ]);
             game.tick();
             expect(game.getBoard()).toEqual([
-                    [false,false,false],
+                    [false,true,false],
                     [false,true,false],
                     [false,false,false]
                 ])
@@ -85,13 +85,13 @@ describe('GameOfLife', () => {
                 ]);
             game.tick();
             expect(game.getBoard()).toEqual([
-                    [false,false,false],
                     [false,true,false],
+                    [false,true,true],
                     [false,false,false]
                 ])
         });
 
-        it('cell should die when it is a false cell with 4 neighbours', ()=>{
+        it('cell should die when it is a true cell with 4 neighbours', ()=>{
             let game:GameOfLife = new GameOfLife([
                     [true,false,true],
                     [false,true,false],
@@ -99,12 +99,42 @@ describe('GameOfLife', () => {
                 ]);
             game.tick();
             expect(game.getBoard()).toEqual([
-                    [false,false,false],
                     [false,true,false],
-                    [false,false,false]
+                    [true,false,true],
+                    [false,true,false]
+                ])
+        });
+
+        it('cell should die when it is a true cell with 5 neighbours', ()=>{
+            let game:GameOfLife = new GameOfLife([
+                    [true,false,true],
+                    [true,true,false],
+                    [true,false,true]
+                ]);
+            game.tick();
+            expect(game.getBoard()).toEqual([
+                    [true,false,false],
+                    [true,false,true],
+                    [true,false,false]
                 ])
         });
 
     })
+
+    it('should pass random big matrix', ()=>{
+        let game:GameOfLife = new GameOfLife([
+                [false,false,true,true,false,true],
+                [true,true,false,true,false,false],
+                [true,false,true,false,true,true],
+                [true,false,false,true,true,false]
+            ]);
+        game.tick();
+        expect(game.getBoard()).toEqual([
+            [false,true,true,true,true,false],
+            [true,false,false,false,false,true],
+            [true,false,true,false,false,true],
+            [false,true,false,true,true,true]
+            ])
+    });
 
 });
