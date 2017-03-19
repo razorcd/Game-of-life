@@ -5,10 +5,16 @@ export default class GameOfLife {
         this.matrix = matrix;
     }
 
+    /**
+     * Returns the matrix in the current state.
+     */
     getBoard():Boolean[][] {
         return this.matrix;
     }
 
+    /**
+     * Generate an iteration of the game.
+     */
     tick():void {
        this.matrix = this.generateNextMatrix(); 
     }
