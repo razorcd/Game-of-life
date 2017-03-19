@@ -3,6 +3,11 @@
 Game of life in Ruby. Developed using TDD.
 
 
+## Setup
+
+Run `bundle` to install all required dependencies.
+
+
 ## Usage
 
 
