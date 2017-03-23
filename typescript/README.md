@@ -5,8 +5,8 @@ Game of life in Typescript. Developed using TDD.
 
 ## Setup
 
-Run `npm install` to install all the required dependencies.
-Run `npm run postinstall` to install all required Typescript typings.
+- Run `npm install` to install all the required dependencies.
+- Run `npm run postinstall` to install all required Typescript typings.
 
 Developed using node v6.11.4.
 
