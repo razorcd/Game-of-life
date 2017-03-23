@@ -1,6 +1,10 @@
 export default class GameOfLife {
     private matrix:Boolean[][];
 
+    /**
+     * Initialises a new game.
+     * @param matrix [Boolean[][]] The initial matrix.
+     */
     constructor(matrix:Boolean[][]) {
         this.matrix = matrix;
     }
