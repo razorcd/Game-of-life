@@ -22,4 +22,6 @@ The initial pattern constitutes the seed of the system. The first generation is 
 
 [Game of life in Java using TDD.](/java)
 
+[Game of life in Typescript using TDD.](/typescript)
+
 ... more to come
