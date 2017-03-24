@@ -1,12 +1,20 @@
 'use strict';
 
-var _ = require('underscore');
-
 module.exports = (function() {
-  // Public interface
-  var GameOfLife = {
-    prop1: 'prop1'
+
+  /**
+   * Initializes the game.
+   * @param {boolean[][]} matrix 
+   */
+  var GameOfLife = function(matrix) {
+    this._matrix = matrix;
   };
+
+  /**
+   * Returns the current matrix.
+   * returns [boolean[][]] The current matrix.
+   */
+  GameOfLife.prototype.getMatrix = function() { return this._matrix; }
 
   return GameOfLife;
 })();

@@ -7,10 +7,11 @@ describe('GameOfLife', function() {
     GameOfLife = require('../lib/GameOfLife');
   });
 
-  describe('Your first test', function() {
+  describe('initialization', function() {
 
-    it('does something meaningful', function() {
-      expect(GameOfLife.prop1).toEqual('prop1');
+    it('should set the initial matrix', function() {
+      var game = new GameOfLife([[true], [false]]);
+      expect(game.getMatrix()).toEqual([[true], [false]]);
     });
 
   });
