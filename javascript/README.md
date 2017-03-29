@@ -13,6 +13,11 @@ Run `npm install` to install all the required dependencies.
 Developed using node v6.11.4.
 
 
+## Tests
+
+Run tests by simply calling the `npm run test` command in your shell.
+
+
 ## Usage
 
 
@@ -29,7 +34,3 @@ Generate next itteration by calling the `tick` method.
 Get current itteration by calling the `board` method.
 ``` javascript
 ```
-
-## Tests
-
-Run tests by simply calling the `npm run test` command in your shell.

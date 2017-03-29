@@ -11,6 +11,11 @@ Game of life in Typescript. Developed using TDD.
 Developed using node v6.11.4.
 
 
+## Tests
+
+Run tests by simply calling the `npm run test` command in your shell.
+
+
 ## Usage
 
 
@@ -40,7 +45,3 @@ game.getBoard() # =>
             [true,  true,  true,  false],
         ]
 ```
-
-## Tests
-
-Run tests by simply calling the `npm run test` command in your shell.

@@ -8,6 +8,11 @@ Game of life in Ruby. Developed using TDD.
 Run `bundle` to install all required dependencies.
 
 
+## Tests
+
+Run tests by simply running the `rspec` command.
+
+
 ## Usage
 
 
@@ -40,7 +45,3 @@ game.board # =>
 ```
 
 Find more test cases in `/spec/fixtures/test_cases.rb`
-
-## Tests
-
-Run tests by simply running the `rspec` command.

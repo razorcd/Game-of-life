@@ -3,6 +3,21 @@
 Game of life in Java. Developed using TDD.
 
 
+## Setup
+
+Run `mvn install` to install all the dependencies.
+
+Developed using Java 1.8
+
+
+## Tests
+
+Run tests by simply running the following command.
+
+``` java
+mvn test
+```
+
 ## Usage
 
 
@@ -35,10 +50,3 @@ game.getMatrix() // =>
 
 Find more test cases in `/test/java/com/gameoflife/factory/MatrixGenerator.java`
 
-## Tests
-
-Run tests by simply running the following command.
-
-``` java
-mvn test
-```
