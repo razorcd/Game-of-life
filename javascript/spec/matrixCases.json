@@ -37,5 +37,19 @@
             [false, false, false],
             [false, false, false]
         ]
+    },
+    {
+        "name": "Alive cell with 2 neighbours",
+        "input": [
+            [true, false, true],
+            [false, true, false],
+            [false, false, false]
+        ],
+        "output": [
+            [false, false, false],
+            [false, true, false],
+            [false, false, false]
+        ]
     }
+
 ]
