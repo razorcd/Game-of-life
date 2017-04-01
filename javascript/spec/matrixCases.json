@@ -24,5 +24,18 @@
             [false, false, false],
             [false, false, false]
         ]
+    },
+    {
+        "name": "Alive cell with 1 neighbour",
+        "input": [
+            [true, false, false],
+            [false, true, false],
+            [false, false, false]
+        ],
+        "output": [
+            [false, false, false],
+            [false, false, false],
+            [false, false, false]
+        ]
     }
 ]
