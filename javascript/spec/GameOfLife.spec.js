@@ -1,4 +1,5 @@
 'use strict';
+var matrixCases = require("./matrixCases.json");
 
 describe('GameOfLife', function() {
 
@@ -14,34 +15,14 @@ describe('GameOfLife', function() {
     });
   });
 
-  describe('rules', function() {
-    it('dead cell with no neighbours', function() {
-      var game = new GameOfLife([
-        [false, false, false],
-        [false, false, false],
-        [false, false, false]
-      ]);
-      game.tick();
-      expect(game.getMatrix()).toEqual([
-          [false, false, false],
-          [false, false, false],
-          [false, false, false]
-        ]);
-    });
-
-    it('alive cell with no neighbours', function() {
-      var game = new GameOfLife([
-        [false, false, false],
-        [false, true, false],
-        [false, false, false]
-      ]);
-      game.tick();
-      expect(game.getMatrix()).toEqual([
-          [false, false, false],
-          [false, false, false],
-          [false, false, false]
-        ]);
-    });
+  describe('with rules', function() {
+    matrixCases.forEach(function(matrixCase) {
+      it(matrixCase.name, function() {
+        var game = new GameOfLife(matrixCase.input);
+        game.tick();
+        expect(game.getMatrix()).toEqual(matrixCase.output);
+      });
+    }, this);
   });
 
 });
