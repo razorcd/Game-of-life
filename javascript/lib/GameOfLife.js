@@ -38,6 +38,7 @@ module.exports = (function() {
   GameOfLife.prototype._getNextCell = function(x,y) {
     if (this._getCellNoighbourCount(x,y) < 2) { return false; }
     if (this._getCellNoighbourCount(x,y) == 2) { return this._matrix[x][y]; }
+    if (this._getCellNoighbourCount(x,y) == 3) { return this._matrix[x][y]; }
     return false;
   }
 
