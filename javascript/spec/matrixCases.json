@@ -63,6 +63,19 @@
             [false, true, false],
             [false, false, false]
         ]
+    },
+    {
+        "name": "Alive cell with 4 neighbours",
+        "input": [
+            [true, false, true],
+            [false, true, false],
+            [true, false, true]
+        ],
+        "output": [
+            [false, false, false],
+            [false, false, false],
+            [false, false, false]
+        ]
     }
 
 ]
