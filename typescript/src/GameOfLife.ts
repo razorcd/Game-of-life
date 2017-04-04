@@ -20,26 +20,35 @@ export default class GameOfLife {
      * Generate an iteration of the game.
      */
     tick():void {
-       this.matrix = this.generateNextMatrix(); 
+       this.matrix = this.generateNextMatrix();
     }
 
     private generateNextMatrix():Boolean[][] {
         let tempMatrix:Boolean[][] = JSON.parse(JSON.stringify(this.matrix));
         for (var i = 0; i < this.matrix.length; i++) {
             for (var j = 0; j < this.matrix[0].length; j++) {
-                tempMatrix[i][j] = this.getNexyCellState(i,j);                
+                tempMatrix[i][j] = this.getNexyCellState(i,j);
             }
         }
         return tempMatrix;
     }
 
     private getNexyCellState(x:number, y:number):Boolean {
-        if (this.getNeighbourCount(x,y) < 2) { return false; }
-        if (this.getNeighbourCount(x,y) == 2) { return this.matrix[x][y]; }
-        if (this.getNeighbourCount(x,y) == 3) { return true; }
-        if (this.getNeighbourCount(x,y) > 3) { return false; }
-        return false;
+        let aliveNeighboursCount:number = this.getNeighbourCount(x,y);
+        let currentCell:Boolean = this.matrix[x][y];
+
+        return (currentCell && (aliveNeighboursCount == 2 || aliveNeighboursCount == 3)) ||
+            !currentCell && (aliveNeighboursCount == 3);
     }
+
+    // Explicit version of getNexyCellState()
+    // private getNexyCellState(x:number, y:number):Boolean {
+    //     if (this.getNeighbourCount(x,y) < 2) { return false; }
+    //     if (this.getNeighbourCount(x,y) == 2) { return this.matrix[x][y]; }
+    //     if (this.getNeighbourCount(x,y) == 3) { return true; }
+    //     if (this.getNeighbourCount(x,y) > 3) { return false; }
+    //     return false;
+    // }
 
     private getNeighbourCount(x:number, y:number):number {
         return [
