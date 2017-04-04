@@ -47,12 +47,21 @@ module.exports = (function() {
    * returns [Boolean] The next state of the cell.
    */
   GameOfLife.prototype._getNextCell = function(x,y) {
-    if (this._getCellNoighbourCount(x,y) < 2) { return false; }
-    if (this._getCellNoighbourCount(x,y) == 2) { return this._matrix[x][y]; }
-    if (this._getCellNoighbourCount(x,y) == 3) { return true; }
-    if (this._getCellNoighbourCount(x,y) > 4) { return false; }
-    return false;
-  }
+    var aliveNeighboursCount = this._getCellNoighbourCount(x,y);
+    var currentCell = this._matrix[x][y];
+
+    return (currentCell && (aliveNeighboursCount == 2 || aliveNeighboursCount == 3)) ||
+        !currentCell && (aliveNeighboursCount == 3);
+    }
+
+    // // Explicit version of _getNextCell():
+    // GameOfLife.prototype._getNextCell = function(x,y) {
+    //   if (this._getCellNoighbourCount(x,y) < 2) { return false; }
+    //   if (this._getCellNoighbourCount(x,y) == 2) { return this._matrix[x][y]; }
+    //   if (this._getCellNoighbourCount(x,y) == 3) { return true; }
+    //   if (this._getCellNoighbourCount(x,y) > 4) { return false; }
+    //   return false;
+    // }
 
   /**
    * Get the alive neighbours count of the specified cell.
