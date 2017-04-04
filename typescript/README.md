@@ -37,11 +37,10 @@ Generate next itteration by calling the `tick` method.
 
 Get current itteration by calling the `board` method.
 ``` typescript
-game.getBoard() # =>
-        [
-            [true,  true,  true,  false], 
-            [false, false, false, true], 
-            [true,  false, false, true],
-            [true,  true,  true,  false],
-        ]
+game.getBoard() // =>
+        // [
+        //     [true,false,false],
+        //     [true,false,true],
+        //     [true,false,false]
+        // ]
 ```
