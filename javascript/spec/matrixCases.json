@@ -46,7 +46,7 @@
             [false, false, false]
         ],
         "output": [
-            [false, false, false],
+            [false, true, false],
             [false, true, false],
             [false, false, false]
         ]
@@ -56,6 +56,19 @@
         "input": [
             [true, false, true],
             [false, true, false],
+            [false, false, true]
+        ],
+        "output": [
+            [false, true, false],
+            [false, true, true],
+            [false, false, false]
+        ]
+    },
+    {
+        "name": "Dead cell with 3 neighbours",
+        "input": [
+            [true, false, true],
+            [false, false, false],
             [false, false, true]
         ],
         "output": [
@@ -72,9 +85,9 @@
             [true, false, true]
         ],
         "output": [
-            [false, false, false],
-            [false, false, false],
-            [false, false, false]
+            [false, true, false],
+            [true, false, true],
+            [false, true, false]
         ]
     },
     {
@@ -87,7 +100,7 @@
         "output": [
             [true, true, true],
             [false, false, false],
-            [false, false, false]
+            [false, true, false]
         ]
     }
 
