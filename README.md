@@ -18,9 +18,12 @@ The initial pattern constitutes the seed of the system. The first generation is 
 
 ## Implementations:
 
-[Game of life in Ruby using TDD.](/ruby)
 
 [Game of life in Java using TDD.](/java)
+
+[Game of life in Javascript using TDD.](/javascript)
+
+[Game of life in Ruby using TDD.](/ruby)
 
 [Game of life in Typescript using TDD.](/typescript)
 
