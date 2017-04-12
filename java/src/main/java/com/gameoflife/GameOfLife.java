@@ -47,21 +47,30 @@ public class GameOfLife {
     /**
      *  Generate the next state of specified cell
      *
-     * @param i the column position of the cell
-     * @param j the row position of the cell
+     * @param x the column position of the cell
+     * @param y the row position of the cell
      * @return [Boolean] the next state of the specified cell
      */
-    private Boolean getNextCellState(int i, int j) {
-            if (matrix[i][j]==false && getNeighboursFor(i,j) == 3 ) { return true; }
-            if (getNeighboursFor(i,j) < 2 ) { return false; }
-            if (getNeighboursFor(i,j) == 2 ) { return matrix[i][j]; }
-            if (getNeighboursFor(i,j) == 3 ) { return matrix[i][j]; }
-            if (getNeighboursFor(i,j) > 3 ) { return false; }
-            return matrix[i][j];
+    private Boolean getNextCellState(int x, int y) {
+        Integer aliveNeighboursCount = getNeighboursFor(x,y);
+        Boolean currentCell = matrix[x][y];
+
+        return (currentCell && (aliveNeighboursCount == 2 || aliveNeighboursCount == 3)) ||
+                !currentCell && (aliveNeighboursCount == 3);
     }
 
-    private Long getNeighboursFor(int x, int y) {
-        return Arrays.asList(
+//    // Explicit version of getNextCellState()
+//    private Boolean getNextCellState(int x, int y) {
+//        if (matrix[x][y] == false && getNeighboursFor(x, y) == 3) { return true; }
+//        if (getNeighboursFor(x, y) < 2) { return false; }
+//        if (getNeighboursFor(x, y) == 2) { return matrix[x][y]; }
+//        if (getNeighboursFor(x, y) == 3) { return matrix[x][y]; }
+//        if (getNeighboursFor(x, y) > 3) { return false; }
+//        return matrix[x][y];
+//    }
+
+    private Integer getNeighboursFor(int x, int y) {
+        return (int) Arrays.asList(
                 getCell(x-1, y-1), getCell(x, y-1), getCell(x+1, y-1),
                 getCell(x-1, y),                            getCell(x+1, y),
                 getCell(x-1, y+1), getCell(x, y+1), getCell(x+1, y+1)
